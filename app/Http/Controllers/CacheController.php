@@ -14,7 +14,7 @@ class CacheController extends Controller
      */
     public function index()
     {
-        Cache::put('test', 'werih', now()->addSeconds(10));
+//        Cache::put('test', 'werih', now()->addSeconds(10));
         $cache = Cache::get('test');
         dump($cache);
         dd($cache);
